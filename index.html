@@ -20,7 +20,7 @@
 		 
 } 
 
-	.sombra{box-shadow: 5px 5px 30px #504e4e;}
+	.sombra{box-shadow: 5px 5px 20px #504e4e;}
 
 	.rodapeStyle{
 		background-color: #000000;
@@ -82,6 +82,35 @@ AUMENTAR A IMAGEM AO PASSAR O MOSUE  */
 	transform: scale(1.1); 	/* scale será o aumento da escla da imagem */
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 	/* sombra na caixa ao passar o mouse */
   }
+ 
+
+  /*********ANIMAÇÃO*********/
+
+    .bannerHover {
+          width: 100%;
+          height: 780px;
+          background-image: url('IMAGENS/banner2.png'); /* imagem inicial */
+          background-size: cover; /*ajusta o tamanho da imagem de fundo para garantir que ela cubra completamente o elemento, mesmo que isso signifique cortar partes da imagem*/
+          background-position: center;
+          transition: background-image 0.5s ease-in-out;
+
+          /*formatando o texto sobre o banner */
+          font-size: 3em;
+          color: rgb(27, 25, 25);  
+          padding-top: 100px; 
+          padding-right: 100px;          
+          text-align: right;        /* Centralizar texto */
+          font-family:Eras ITC, Verdana, Geneva, Tahoma, sans-serif
+    }
+
+      
+
+        .bannerHover:hover {
+          background-image: url('IMAGENS/banner1.png'); /* imagem ao passar o mouse */
+        }
+
+
+/*ANIMAÇÃO TERMINA AQUI*/
 
 	
 
@@ -93,22 +122,24 @@ AUMENTAR A IMAGEM AO PASSAR O MOSUE  */
 	
 	
 
-    <div class="container sombra"> <!--container-fluid se eu quiser a tela inteira-->
+    <div class="--container-fluid sombra"> <!--container-fluid se eu quiser a tela inteira-->
 		<!--crie uma classe sombra está no css interno acima-->
 	
 	
 <!--MENU-->
 <div class="row" style="background-color: #2a303a; padding-left:1%; caixaRodape">
 	<div class="col-md-1">
-		<img src="IMAGENS/logo.png" width="90%">
+		<img src="IMAGENS/logo.png" width="50%">
 		
 	</div>
+
+	
 
 
 <div class="col-md-10"> 
 	<ul class="nav nav-tabs">
 		<li class="nav-item">
-		  <a class="nav-link active" style="color: #020202;" href="index.html">INÍCIO</a>
+		  <a class="nav-link active" style="color: #020202;"  href="index.html">INÍCIO</a>
 		</li>
 	
 		<li class="nav-item">
@@ -123,13 +154,27 @@ AUMENTAR A IMAGEM AO PASSAR O MOSUE  */
 <!--MENU TERMINA AQUI-->
 
 
-<div>
+<!-- ANIMAÇÃO -->
+
+<div class="bannerHover">   <!-- chamando CLASSE com a  animacao --> 
+    
+   Ansiedade não é excesso de futuro, <br>
+   É falta de presença
+
+   
+
+ </div>
+ 
+
+
+ <div>
 	<br>
-	<h1>Cátia Shirlene </h1>
-	<h2 >Psicóloga e Neuropsicóloga </h2>
+	<h1>Áreas de atuação </h1>
+	<h2 >Cuidando da saúde emocional da mulher em tempos de ansiedade e sobrecarga </h2>
 	
 	<br>
 </div>
+
 
 
 
@@ -139,9 +184,9 @@ AUMENTAR A IMAGEM AO PASSAR O MOSUE  */
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-3"> 
-					<div class="card  borda ZOOM" >  <!--criei uma classe chamada borda para arredondar as bordas do thumb-->
+					<div class="card  borda ZOOM " >  <!--criei uma classe chamada borda para arredondar as bordas do thumb-->
 						
-						<img class="card-img-top" alt="Bootstrap Thumbnail First" src="IMAGENS/DEPRESSAO.jpg">
+						<!-- <img class="card-img-top" alt="Bootstrap Thumbnail First" src="IMAGENS/DEPRESSAO.jpg"> -->
 
 						<div class="card-block">
 							<h5 class="card-title">
@@ -161,7 +206,7 @@ A depressão é uma condição séria que afeta milhões de pessoas no mundo tod
 				</div>
 				<div class="col-md-3">
 					<div class="card borda ZOOM">
-						<img class="card-img-top" alt="Bootstrap Thumbnail Second" src="IMAGENS/ANSIEDADE.jpg">
+						<!-- <img class="card-img-top" alt="Bootstrap Thumbnail Second" src="IMAGENS/ANSIEDADE.JPG"> -->
 						<div class="card-block">
 							<h5 class="card-title">
 								ANSIEDADE
@@ -179,7 +224,7 @@ A ansiedade é uma resposta natural do corpo diante de situações desafiadoras,
 				</div>
 				<div class="col-md-3">
 					<div class="card borda ZOOM">
-						<img class="card-img-top" alt="Bootstrap Thumbnail Third" src="IMAGENS/PANICO.jpg">
+						<!-- <img class="card-img-top" alt="Bootstrap Thumbnail Third" src="IMAGENS/PANICO.jpg"> -->
 						<div class="card-block">
 							<h5 class="card-title">
 								CRISE DE PÂNICO
@@ -197,12 +242,12 @@ As crises de pânico podem ser assustadoras e incapacitantes, levando a sintomas
 
 				<div class="col-md-3" >
 					<div class="card borda ZOOM" >
-						<img class="card-img-top" alt="Bootstrap Thumbnail Third" src="IMAGENS/AUTODES.jpg">
+						<!-- <img class="card-img-top" alt="Bootstrap Thumbnail Third" src="IMAGENS/AUTODES.jpg"> -->
 						<div class="card-block" >
 							<h5 class="card-title" style="font-size: 1.2em;">
 								AUTODESENVOLVIMENTO
 							</h5>
-							<p class="card-text"">
+							<p class="card-text">
 								
 O autodesenvolvimento é uma jornada contínua de crescimento e transformação. A psicologia desempenha um papel essencial nesse processo, ajudando a compreender padrões de comportamento, emoções e pensamentos que impactam a vida cotidiana. <br> <a href="desenvolvimento.html">VEJA MAIS...</a>  
 
@@ -219,6 +264,16 @@ O autodesenvolvimento é uma jornada contínua de crescimento e transformação.
 		</div>
 
 	</div>
+
+
+	<!-- o que mudará -->
+
+
+
+
+
+	<!-- termina -->
+		
 
 
 
