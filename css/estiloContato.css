@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+form{
+	width:50%;/*largura do formulário*/
+	margin:auto; /*para ficar no centro*/
+	font-family:'Century Gothic', 'Arial Narrow', Arial, sans-serif;
+	margin: auto;
+	padding-top: 2%;
+	
+}
+
+label{
+	color: rgb(0, 0, 0);
+}
+
+
+
+input, textarea{ /*fundo da caixa de preenchimento de dados*/
+	font-family:verdana, sans-serif;
+	font-weight:normal;
+	font-size:1em;
+	font-family:'Century Gothic', 'Arial Narrow', Arial, sans-serif;
+	width: 60%;
+	padding: 2px;
+	border-radius: 5px;
+
+}
+input:hover, textarea:hover{ /*quando passar o mouse na caixa de texto mudará de cor */
+	background-color:#d6cfd5;
+	
+	
+}
+
+legend{ /*formatação das legendas*/
+	color:#000000;
+	/*font-weight:bold; negrito*/
+	font-size:1.0em;
+	font-family:verdana, sans-serif;
+	
+}
+
+fieldset{ /*vamos colocar borda nos assuntos*/
+	width: 80%;
+	margin:auto;
+	border-radius: 10px;
+	text-align: center;
+	
+}
+
+#sexo{ /*ID DO FIELDSET*/
+	width:150px;
+	font-family:verdana, sans-serif;
+	width: 30%;
+	
+}
+
+
+.bar::-webkit-slider-thumb {
+    -webkit-appearance: none; /*resetando a aparência nativa do sistema operacional*/
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; /*arredondando o pointer - quanto maior o numero mais arredondada*/
+    
+    cursor: pointer;
+}
+
+/*alterando a cor do placeholder*/
+Input:hover::placeholder{
+    color:#ffffff; 
+}
+
+.botoes{
+	width: 150px;
+	text-align:center;
+	padding-bottom: 50px;
+	margin: auto;
+	border-color:#e3054b;
+	
+	
+}
+
+
+
+
+
+
