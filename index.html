@@ -20,12 +20,14 @@
 		 
 } 
 
-	.sombra{box-shadow: 5px 5px 20px #504e4e;}
+	.sombra{box-shadow: 5px 5px 20px #504e4e;
+	
+	}
 
 	.rodapeStyle{
 		background-color: #000000;
 		text-align: center;
-		padding-top: 10px;font-family: 'century gothic' , 'Microsoft Yi Baiti','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;ont-family: Verdana, Geneva, Tahoma, sans-serif;
+		padding-top: 10px;font-family: 'century gothic' , 'Microsoft Yi Baiti','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-family: Verdana, Geneva, Tahoma, sans-serif;
 	}
 	.corLink{
 		color:rgb(215, 35, 35);
@@ -88,16 +90,16 @@ AUMENTAR A IMAGEM AO PASSAR O MOSUE  */
 
     .bannerHover {
           width: 100%;
-          height: 780px;
+          height: 150px;
           background-image: url('IMAGENS/banner2.png'); /* imagem inicial */
           background-size: cover; /*ajusta o tamanho da imagem de fundo para garantir que ela cubra completamente o elemento, mesmo que isso signifique cortar partes da imagem*/
           background-position: center;
           transition: background-image 0.5s ease-in-out;
-
+		color: #ffffff;
           /*formatando o texto sobre o banner */
-          font-size: 3em;
-          color: rgb(27, 25, 25);  
-          padding-top: 100px; 
+          font-size: 2em;
+         
+          padding-top: 0px; 
           padding-right: 100px;          
           text-align: right;        /* Centralizar texto */
           font-family:Eras ITC, Verdana, Geneva, Tahoma, sans-serif
@@ -107,10 +109,53 @@ AUMENTAR A IMAGEM AO PASSAR O MOSUE  */
 
         .bannerHover:hover {
           background-image: url('IMAGENS/banner1.png'); /* imagem ao passar o mouse */
+		  color: rgb(255, 255, 255);  
         }
 
 
 /*ANIMAÇÃO TERMINA AQUI*/
+
+
+/* MENU FIXO */
+
+        .menu-fixo {
+			margin: auto;
+            width: 100%;
+            border-radius: 0 0px 10px 10px;
+            background-color:rgba(255, 255, 255, 0.8);
+            position: sticky;
+            /*sticky faz com que um elemento fique fixo em uma posição na tela enquanto você rola a página*/
+            top: 0px; /*para ele ficar no topo*/
+            z-index: 1000; /*empilhamento. COloquei um número alto para garantir que ficará acima de todos*/
+            text-align: center;
+            padding: 5px 0; /*margens em cima e embaixo de 10px e zero nas laterais*/
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+            padding-bottom: 10px 0; /*margens em cima e embaixo de 10px e zero nas laterais*/
+            
+        }
+
+       .menu-fixo nav a {
+            margin: 0 15px; /*margens em cima e embaixo de 0px e 15 nas laterais*/
+            text-decoration: none;
+            color: #000000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+           
+        }
+
+       
+        li{
+             list-style: none;
+        }
+
+        .menu-fixo nav a:hover {
+            color: rgb(138, 30, 71);
+            text-decoration: underline;
+           
+        }
+	
+
+
 
 	
 
@@ -122,12 +167,12 @@ AUMENTAR A IMAGEM AO PASSAR O MOSUE  */
 	
 	
 
-    <div class="--container-fluid sombra"> <!--container-fluid se eu quiser a tela inteira-->
+    <div class="container sombra"> <!--container-fluid se eu quiser a tela inteira-->
 		<!--crie uma classe sombra está no css interno acima-->
 	
 	
 <!--MENU-->
-<div class="row" style="background-color: #2a303a; padding-left:1%; caixaRodape">
+<div class="row menu-fixo" style="background-color: #2a303a; padding-left:1%; caixaRodape">
 	<div class="col-md-1">
 		<img src="IMAGENS/logo.png" width="50%">
 		
@@ -139,14 +184,14 @@ AUMENTAR A IMAGEM AO PASSAR O MOSUE  */
 <div class="col-md-10"> 
 	<ul class="nav nav-tabs">
 		<li class="nav-item">
-		  <a class="nav-link active" style="color: #020202;"  href="index.html">INÍCIO</a>
+		  <a class="nav-link active" style="color: #020202;" href="index.html">INÍCIO</a>
 		</li>
 	
 		<li class="nav-item">
 		  <a class="nav-link"  style="color: #ffffff;"  href="sobremim.html">SOBRE MIM</a>
 		</li>
 		<li class="nav-item">
-		  <a class="nav-link" style="color: #ffffff;"  href="#">ENTRE EM CONTATO</a>
+		  <a class="nav-link" style="color: #ffffff;"  href="contato.html">ENTRE EM CONTATO</a>
 		</li>
 	  </ul>
 </div>
@@ -159,7 +204,7 @@ AUMENTAR A IMAGEM AO PASSAR O MOSUE  */
 <div class="bannerHover">   <!-- chamando CLASSE com a  animacao --> 
     
    Ansiedade não é excesso de futuro, <br>
-   É falta de presença
+   é falta de presença
 
    
 
@@ -194,7 +239,7 @@ AUMENTAR A IMAGEM AO PASSAR O MOSUE  */
 							</h5>
 							<p class="card-text" >
 								
-A depressão é uma condição séria que afeta milhões de pessoas no mundo todo, impactando profundamente a qualidade de vida. Felizmente, o tratamento psicológico oferece ferramentas eficazes para ajudar no enfrentamento da doença e na construção de uma vida mais equilibrada e saudável.
+A depressão é uma condição séria que afeta milhões de pessoas no mundo todo, impactando profundamente a qualidade de vida. Felizmente, o tratamento psicológico oferece ferramentas eficazes para ajudar no enfrentamento da doença e na construção de uma vida equilibrada.
  <a href="depressao.html">VEJA MAIS...</a> 
 								
 							</p>
@@ -202,8 +247,12 @@ A depressão é uma condição séria que afeta milhões de pessoas no mundo tod
 							
 
 						</div>
+						</a>
+
+
 					</div>
 				</div>
+				
 				<div class="col-md-3">
 					<div class="card borda ZOOM">
 						<!-- <img class="card-img-top" alt="Bootstrap Thumbnail Second" src="IMAGENS/ANSIEDADE.JPG"> -->
@@ -266,30 +315,6 @@ O autodesenvolvimento é uma jornada contínua de crescimento e transformação.
 	</div>
 
 
-	<!-- o que mudará -->
-
-
-
-
-
-	<!-- termina -->
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
 
 
 	<!-- RODAPÉ -->
@@ -301,6 +326,9 @@ O autodesenvolvimento é uma jornada contínua de crescimento e transformação.
 			</p>
 		</div>
 	</div>
+
+
+
 </div>
 
 

@@ -1,144 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Explore o mundo com a Company</title>
+    <title> Autoconhecimento e bem estar</title>
 
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estiloContato.css">
 	<link rel="icon" href="../IMAGENS/favicon.ico">
 
 
 <style>
-	body{background-color: #F8F8FF;}
-	.sombra{box-shadow: 5px 5px 30px #504e4e;}
+	body{background-color:#f2f2f2;
+		 
+} 
+
+	.sombra{box-shadow: 5px 5px 20px #504e4e;}
 
 	.rodapeStyle{
-		background-color: #dbdbe2;
+		background-color: #000000;
 		text-align: center;
-		padding-top: 10px;
-		font-size: 1.1em ;
+		padding-top: 10px;font-family: 'century gothic' , 'Microsoft Yi Baiti','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;ont-family: Verdana, Geneva, Tahoma, sans-serif;
 	}
-	.centro{
-		padding-left: 25%;
-		
+	.corLink{
+		color:rgb(215, 35, 35);
 	}
-	.rodapeStyle{
-		background-color: #dbdbe2;
+
+	h1{
+		font-size: 2.5em;
 		text-align: center;
-		padding-top: 10px;
-		font-size: 1.1em ;
 	}
+
+	h2{
+		font-size: 1.5em;
+		text-align: center;
+		font-family: 'century gothic' , 'Microsoft Yi Baiti','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	}
+
+
+	.tamanhoRodape{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.caixaRodape{
+    background-color: #2a303a;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 13px;
+    color: #fff;
+    font-family: 'century gothic' ,'Microsoft Yi Baiti','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 1.0em;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 2%;
+}
+	/*arredondar borda das imagens*/
+	 .borda{
+	    border-radius:20px;
+		border-color: #ded7d7;	
+			
+	}  
 	
+	
+
+/* MENU FIXO */
+
+        .menu-fixo {
+			margin: auto;
+            width: 100%;
+            border-radius: 0 0px 10px 10px;
+            background-color:rgba(255, 255, 255, 0.8);
+            position: sticky;
+            /*sticky faz com que um elemento fique fixo em uma posição na tela enquanto você rola a página*/
+            top: 0px; /*para ele ficar no topo*/
+            z-index: 1000; /*empilhamento. COloquei um número alto para garantir que ficará acima de todos*/
+            text-align: center;
+            padding: 5px 0; /*margens em cima e embaixo de 10px e zero nas laterais*/
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+            padding-bottom: 10px 0; /*margens em cima e embaixo de 10px e zero nas laterais*/
+            
+        }
+
+       .menu-fixo nav a {
+            margin: 0 15px; /*margens em cima e embaixo de 0px e 15 nas laterais*/
+            text-decoration: none;
+            color: #000000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+           
+        }
+
+       
+        li{
+             list-style: none;
+        }
+
+        .menu-fixo nav a:hover {
+            color: rgb(138, 30, 71);
+            text-decoration: underline;
+           
+        }
+	
+
+
+
+	
+
 </style>
 
   </head>
   <body>
+
+	
 	
 
-<div class="container-fluid sombra"> <!--container-fluid se eu quiser a tela inteira-->
+    <div class="container sombra"> <!--container-fluid se eu quiser a tela inteira-->
 		<!--crie uma classe sombra está no css interno acima-->
 	
-	<!--MENU-->
-		<div class="row">
-			<div class="col-md-1">
-				<img src="IMAGENS/logo.png">
-			</div>
-
-
-		<div class="col-md-10"> 
-			<ul class="nav justify-content-center nav nav-pills"> <!--css retirada do bootstrap Brasil p centrazilzar-->
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">Home</a> 
-					<!--copiei o css do botão colorido do bootstrap brasil para mudar a cor do btn-->
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="resorts.html">Resorts</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Pacotes</a>
-				</li>
-				<li class="nav-item">
-					<a class="btn btn-success active" href="contato.html">Cadastre-se</a>
-				</li>
-				
-			</ul>
-		</div>
+	
+<!--MENU-->
+<div class="row menu-fixo" style="background-color: #2a303a; padding-left:1%; caixaRodape">
+	<div class="col-md-1">
+		<img src="IMAGENS/logo.png" width="50%">
+		
 	</div>
 
+	
+
+
+<div class="col-md-10"> 
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+		  <a class="nav-link " style="color: #ffffff;" href="index.html">INÍCIO</a>
+		</li>
+	
+		<li class="nav-item">
+		  <a class="nav-link"  style="color: #ffffff;"  href="sobremim.html">SOBRE MIM</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link active" style="color: #020202;"  href="#">ENTRE EM CONTATO</a>
+		</li>
+	  </ul>
+</div>
+</div>
 <!--MENU TERMINA AQUI-->
 
 
+  <div id="conteudo_formulario"> <!--caixa que receberá o formulário-->
 
-<!--começo formulario-->
-<div class="col-md-12 centro"> <!--criei uma classe para formatar a div que o formulario está dentro-->
-
-	<form>
-		<div class="form-row">
+      <form method="post" id="fContato" action="mailto:kelly.psouza@sp.senac.br">
+	
 
 
-			<div class="form-group col-md-6">
-				<label for="inputNome">Nome</label>
-				<input type="text" class="form-control" id="inputNome" autofocus>
-			</div>
 
-		<div class="form-group col-md-6">
-			<label for="inputEmail4">Email</label>
-			<input type="email" class="form-control" id="inputEmail4" >
-		</div>
+<fieldset id="usuario"> <!-- conjunto de campos em bloco-->
+   
+  <legend>Marque sua consulta</legend>
+<p>
 
-		<div class="form-group col-md-6">
-			<label for="inputAddress">Endereço</label>
-			<input type="text" class="form-control" id="inputAddress" >
-		</div>
-		
+   <label for="cNome"> Nome: </label> <br>
+   <input type="text" name="tNome" id="cNome" size="20" maxlength="20"  required />
+</p>
 
-		<div class="form-group col-md-6">
-		
-			<label for="inputCity">Cidade</label>
-			<input type="text" class="form-control" id="inputCity">
-		</div>
+	
+<p>
+   <label for="cMail">E-mail:</label> <br>
+   <input type="email" name="tMail" id="cMail" size="30" maxlength="30"  placeholder="Ex: exemplo@mail.com" required />
+</p>
 
-		
-		<div class="form-group col-md-6">
-		
-			<label for="inputEstado">Estado</label>
-			<input type="text" class="form-control" id="inputEstado">
-		</div>
+	
 
-		
-		<div class="form-group col-md-2">
-			<label for="inputCEP">CEP</label>
-			<input type="text" class="form-control" id="inputCEP">
-		</div>
+	
+<p>
 
-		<button type="submit" class="btn btn-success active">Enviar </button> 
-		<br /><br />
-	</div>
-	</form>
+   <label for="cReserva"> Data da reserva:</label> <br>
+  
+   <input type="date" name="tReserva" id="cReserva"/>
+</p>
+<!-- aparecerá o calendário. Se não aparecer é pq o navegador não está atualizado -->
+
+<p>
+   <label for="cTel">Telefone:</label> <br>
+   <input type="tel" name="tTel" id="cTel" size="30" maxlength="50"  placeholder="(11)55-9999-9999" required />
+</p>
+
+
+
+
+
+
+<div class="botoes">
+   <input type="submit" name="Enviar"  /> 
+  
+ 
+</div>
+
+</fieldset>
+
+</form>
 </div>
 
 
+ 
 
-<!--fim formulario-->
 
 
-	<div class="row">
-		<div class="col-md-12 rodapeStyle"> <!--criei uma classe para formatar meu rodape veja acima no css interno-->
-			
+
+
+
+
+	<!-- RODAPÉ -->
+
+	<div class="row tamanhoRodape">
+		<div class="col-md-12 caixaRodape">
 			<p>
-				Todos os Direitos Reservados - 2023 
-						
+				TODOS O DIREITOS RESERVADOS | 2024
 			</p>
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
 
 <!--PAGINA TERMINA AQUI-->
 
@@ -147,5 +243,19 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+
+
+
+
+
+
+	
   </body>
 </html>
+<!-- WHATSAPP-->
+
+<a href="https://api.whatsapp.com/send?phone=5511978019100&text=Quero%20fazer%20um%20orçamento"
+target="_blank"
+style="position:fixed;bottom:20px;right:30px;">
+<svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+</a>
